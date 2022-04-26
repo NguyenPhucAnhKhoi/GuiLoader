@@ -1,0 +1,10 @@
+name: Test
+version: '${project.version}'
+main: me.nguyenkhoi.test.Test
+authors: [ NguyenKhoi ]
+description: This is a testing plugin
+website: facebook.com
+commands:
+  counter:
+    description: Counter System GUI
+    usage: /<command>
