@@ -19,7 +19,7 @@ jobs:
         with:
           name: "[DevBuild]-Test"
           path: |
-            ./target/Test.jar
+            ./target/Test-1.0-SNAPSHOT.jar
       - uses: jungwinter/split@v2
         id: split
         with:
