@@ -1,2 +1,2 @@
-# Counter
-That plugin allow you create a Gui that have multiple pages
+# GUI Loader
+That plugin allow you create a Gui from a config files
