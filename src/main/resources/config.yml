@@ -1,0 +1,97 @@
+TITLE: "&dTest items GUI"
+ROWS: 6
+DECORATES:
+  0:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    data: 14
+    name: "&8Hello"
+    lore:
+      - "&aThis is an decorate item"
+      - "&bDo not click me"
+    slot:
+      - 2
+      - 6
+  1:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    data: 1
+    name: "&8Hello"
+    lore:
+      - "&aThis is an decorate item"
+      - "&bDo not click me"
+    slot:
+      - 3
+      - 5
+  2:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    data: 2
+    name: "&8Hello"
+    lore:
+      - "&aThis is an decorate item"
+      - "&bDo not click me"
+    slot:
+      - 9
+      - 10
+      - 11
+      - 15
+      - 16
+      - 17
+  3:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    data: 5
+    name: "&8Hello"
+    lore:
+      - "&aThis is an decorate item"
+      - "&bDo not click me"
+    slot:
+      - 18
+      - 26
+      - 27
+      - 35
+      - 36
+      - 44
+      - 45
+      - 53
+  4:
+    material: STAINED_GLASS_PANE
+    amount: 1
+    data: 3
+    name: "&8Hello"
+    lore:
+      - "&aThis is an decorate item"
+      - "&bDo not click me"
+    slot:
+      - 46
+      - 47
+      - 48
+      - 49
+      - 50
+      - 51
+      - 52
+ITEMS:
+  COAL_ORE:
+    slot:
+    Blocks:
+      material: COAL
+      name: "&8Coal"
+      lore:
+        - "Coal Storage"
+        - "Click me"
+    Actions:
+  IRON_ORE:
+  GOLD_ORE:
+  LAPIS_ORE:
+  REDSTONE_ORE:
+  DIAMOND_ORE:
+  EMERALD_ORE:
+  COAL_BLOCK:
+  IRON_BLOCK:
+  GOLD_BLOCK:
+  LAPIS_BLOCK:
+  REDSTONE_BLOCK:
+  DIAMOND_BLOCK:
+  EMERALD_BLOCK:
+  STONE:

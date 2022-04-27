@@ -8,3 +8,5 @@ commands:
   counter:
     description: Counter System GUI
     usage: /<command>
+  items:
+    description: Get Item from config
