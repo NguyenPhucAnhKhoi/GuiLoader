@@ -25,19 +25,3 @@ jobs:
         with:
           msg: ${{github.repository}}
           separator: "/"
-      - name: Discord Webhook
-        uses: tsickert/discord-webhook@v4.0.0
-        with:
-          webhook-url: ${{ secrets.WEBHOOK_URL }}
-          username: "${{ steps.split.outputs._1 }}"
-          embed-title: "Development Builds"
-          avatar-url: "https://github.com/${{ steps.split.outputs._0 }}.png"
-          embed-color: "65280"
-          embed-description: |
-            Change Log:
-            
-            ${{ github.event.head_commit.message }}
-            
-            Developer: [`${{ github.actor }}`](https://github.com/${{ github.actor }})
-            Download: [`${{ github.run_id }}`](https://nightly.link/${{github.repository}}/actions/runs/${{ github.run_id }}/[DevBuild]-Storage.zip)
-            SpigotMC: [`10051`](https://www.spigotmc.org/resources/100516/)
