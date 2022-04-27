@@ -5,8 +5,5 @@ authors: [ NguyenKhoi ]
 description: This is a testing plugin
 website: facebook.com
 commands:
-  counter:
-    description: Counter System GUI
-    usage: /<command>
   items:
     description: Get Item from config

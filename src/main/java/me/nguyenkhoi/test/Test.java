@@ -10,9 +10,7 @@ public final class Test extends JavaPlugin {
     public void onEnable() {
         plugin = this;
         this.saveDefaultConfig();
-        this.getCommand("counter").setExecutor(new Command());
         this.getCommand("items").setExecutor(new Command());
-        Bukkit.getPluginManager().registerEvents(new InventoryClick(), this);
         Bukkit.getPluginManager().registerEvents(new GuiClick(), this);
     }
     @Override
