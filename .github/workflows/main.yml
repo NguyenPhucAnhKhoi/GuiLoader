@@ -17,9 +17,9 @@ jobs:
         run: mvn -B package
       - uses: "actions/upload-artifact@v3"
         with:
-          name: "[DevBuild]-Storage"
+          name: "[DevBuild]-Test"
           path: |
-            ./target/Storage.jar
+            ./target/Test.jar
       - uses: jungwinter/split@v2
         id: split
         with:
