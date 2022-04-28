@@ -1,22 +1,22 @@
 package me.nguyenkhoi.test;
 
-import org.apache.commons.lang.ArrayUtils;
+import me.nguyenkhoi.test.GuiFromFile.LoadDecorate;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
 
-import java.util.List;
+import java.util.Set;
 
+import static me.nguyenkhoi.test.GuiFromFile.LoadItemsBlocks.*;
 import static me.nguyenkhoi.test.GuiFromFile.LoadDecorate.*;
 import static me.nguyenkhoi.test.GuiFromFile.LoadMenu.*;
-import static me.nguyenkhoi.test.Manager.colorize;
+import static me.nguyenkhoi.test.GuiFromFile.OpenGui.OpenGui;
 import static me.nguyenkhoi.test.Test.plugin;
 
 
 public class Command implements CommandExecutor {
-    public static Inventory gui;
     @Override
     public boolean onCommand(CommandSender sender, org.bukkit.command.Command command, String label, String[] args) {
         if (command.getName().equalsIgnoreCase("items")) {
@@ -26,23 +26,11 @@ public class Command implements CommandExecutor {
                 plugin.saveConfig();
                 plugin.saveDefaultConfig();
             }
+            LoadMenu();
             LoadDecorate();
+            LoadItemsBlock();
             Player p = (Player) sender;
-            gui = Bukkit.createInventory(null, 54, colorize(plugin.getConfig().getString("TITLE")));
-            int d = 0;
-            int t = 0;
-            for (List<Integer> a : decorate_slot) {
-                if (a == null) {
-                    decorate.remove(t);
-                } else {
-                    t++;
-                    for (int j = 0; j < a.size(); j++) {
-                        gui.setItem(a.get(j), decorate.get(d));
-                    }
-                    d++;
-                }
-            }
-            p.openInventory(gui);
+            OpenGui(p);
         }
         return true;
     }

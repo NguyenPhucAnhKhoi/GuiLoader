@@ -73,26 +73,21 @@ DECORATES:
       - 52
 ITEMS:
   COAL_ORE:
-    slot:
+    Slot:
+    - 19
     Blocks:
-      material: COAL
+      material: INK_SACK
       name: "&8Coal"
       lore:
         - "Coal Storage"
         - "Click me"
-    Actions:
   IRON_ORE:
-  GOLD_ORE:
-  LAPIS_ORE:
-  REDSTONE_ORE:
-  DIAMOND_ORE:
-  EMERALD_ORE:
-  COAL_BLOCK:
-  IRON_BLOCK:
-  GOLD_BLOCK:
-  LAPIS_BLOCK:
-  REDSTONE_BLOCK:
-  DIAMOND_BLOCK:
-  EMERALD_BLOCK:
-  STONE:
-CONVERT:
+    Slot:
+    - 20
+    Blocks:
+      material: INK_SACK
+      data: 15
+      name: "&8Coal"
+      lore:
+        - "Coal Storage"
+        - "Click me"

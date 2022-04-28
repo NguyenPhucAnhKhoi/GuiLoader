@@ -5,6 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
 import static me.nguyenkhoi.test.Command.*;
+import static me.nguyenkhoi.test.GuiFromFile.OpenGui.gui;
 
 public class GuiClick implements Listener {
     @EventHandler
