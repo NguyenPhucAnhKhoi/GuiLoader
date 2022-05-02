@@ -1,2 +1,2 @@
 # GUI Loader
-[![](https://github.com/user/repository/subscription)
+[fork my repository](https://github.com/user/repository/fork)
