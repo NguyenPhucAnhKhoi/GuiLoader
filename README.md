@@ -1,2 +1,2 @@
 # GUI Loader
-That plugin allow you create a Gui from a config files (https://www.spigotmc.org/resources/34315/)
+[![](https://s18955.pcdn.co/wp-content/uploads/2018/02/github.png)](https://github.com/user/repository/subscription)
